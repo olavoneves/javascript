@@ -10,6 +10,7 @@ for (i = 15; i <= 30; i++) {
 numberr = 40
 
 while (numberr <= 50) {
+    if (numberr === 47) break
     console.log('number ', numberr)
     numberr++
 }
@@ -32,3 +33,8 @@ const myCar = {
 for (let i in myCar) 
     console.log(i, myCar[i])
 
+
+    const friends = ['Dario', 'Oswald']
+
+    for (let i of friends)
+        console.log(i)
