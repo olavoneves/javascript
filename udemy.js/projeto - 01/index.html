@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Simple Calculator using JavaScript</title>
+	<link href="style.css" rel="stylesheet">
+	<link rel="shortcut icon" href="Fasticon-Iphone-Toon-IPhone-Afraid.256.png" type="image/x-icon">
+</head>
+<body>
+	<div class="wrapper">
+		<h2>Simple Calculator</h2>
+		<input id="num-one" name="num-one" type="text"> 
+		<input id="num-two" name="num-two" type="text">
+		<br>
+		<br>
+		<input checked id="box01" name="sign-area" type="radio" value="add"><b>+</b> 
+		<input id="box02" name="sign-area" type="radio" value="subtract"><b>-</b>
+		<input id="box03" name="sign-area" type="radio" value="multiply"><b>*</b> 
+		<input id="box04" name="sign-area" type="radio" value="divide"><b>/</b>
+		<br>
+		<br>
+		<button onclick="outcome()" type="button">calculate</button>
+		<h1 id="resultArea"></h1>
+	</div>
+	<script src="index.js">
+	</script> 
+
+</body>
+</html>
