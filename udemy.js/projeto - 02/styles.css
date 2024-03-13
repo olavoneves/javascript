@@ -1,4 +1,6 @@
-html {
+@charset "UTF-8"; 
+
+  html {
     font-family: "Roboto", sans-serif;
     font-size: 10px;
     color: #4e4d4d;
@@ -36,10 +38,12 @@ html {
   .bill {
     display: flex;
   }
+  
   .bill label {
     flex: 1;
     align-self: center;
   }
+
   .bill input {
     flex: 3;
   }

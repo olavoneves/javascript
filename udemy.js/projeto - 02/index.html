@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,8 +13,10 @@
   </head>
   <body>
     <main >
+    
       <h1>Quick Tip</h1>
       <section>
+
         <div class="bill">
           <label for="yourBill">Bill</label>
           <input 
@@ -22,6 +24,7 @@
             placeholder="Your bill" 
             id="yourBill"  />
         </div>
+
         <div>
           <div class="space-between">
             <label for="">Select tip</label
@@ -29,15 +32,18 @@
           </div>
           <input type="range" value="0" id="tipInput" class="range" />
         </div>
+
         <div class="space-between">
           <span>Tip</span>
           <span id="tipValue"></span>
         </div>
+
         <hr />
         <div class="space-between total">
           <span>Total</span>
           <span id="totalWithTip"></span>
         </div>
+
       </section>
 
       <section>
@@ -46,6 +52,7 @@
             <label for="splitInput">Split</label>
             <span id="splitValue">1</span>
           </div>
+
           <input
             type="range"
             min="1"
@@ -55,10 +62,12 @@
             class="range"
           />
         </div>
+
         <div class="space-between">
           <span>Bill each</span>
           <span id="billEach"></span>
         </div>
+        
       </section>
     </main>
     <script src="index.js"></script>
