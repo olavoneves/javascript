@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Guess the number</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="../projeto - 01/Fasticon-Iphone-Toon-IPhone-Afraid.256.png" type="image/x-icon">
+  </head>
+  <body onload="inicio()">
+    <main>
+      <div id="welcomeScreen">
+        <h2>Guess the Number <br />
+          1 - 100</h2>
+      </div>
+
+      <div id="gameArea">
+        <section>
+          <h3 id="textOutput">Your Guess:</h3>
+          <input type="number" id="inputBox" min="1" max="100" onchange="compareNumber()"/>
+        </section>
+        <section class="stats">
+          <div class="info">
+            <p>Number of attempts:</p>
+            <span id="attempts">0</span>
+          </div>
+          <div class="info">
+            <p>Your guesses:</p>
+            <span id="guesses">0</span>
+          </div>
+        </section>
+        <button id="newGameButton">NEW GAME</button>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
