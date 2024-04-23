@@ -38,6 +38,7 @@
     border-radius: 2rem 2rem 2rem 2rem;
     padding: 4rem;
     color: #1f2933;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.575);
   }
   
   h2 {
@@ -59,12 +60,13 @@
   }
   
   button {
+    display: inline;
     border: none;
     cursor: pointer;
     background: var(--green);
     padding: 2rem 6rem;
     margin: 20px 7px 7px 7px;
-    border-radius: 10px;
+    border-radius: 10px 0px;
     font-weight: bold;
     font-size: 1.5em;
     color: white;
