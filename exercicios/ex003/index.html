@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Script</title>
+    <link rel="shortcut icon" href="../ex003/Fasticon-Iphone-Toon-IPhone-Afraid.256.png" type="image/x-icon">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(138, 210, 210);
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(22, 100, 100);
+            font-weight: bold;
+            text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.263);
+            padding: 30px 25px 25px 20px;
+        }
+
+        p {
+            color: black;
+            text-align: justify;
+            padding: 10px;
+            background-color: white;
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.568);
+            border-radius: 20px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo !!</h1>
+    <p>Já tirei a maldição.</p>
+    <script>
+        var number01 = Number(window.prompt('Digite um número :'))
+        var number02 = Number(window.prompt('Digite outro número :'))
+        var soma = number01 + number02
+        window.alert(`A soma do ${number01} e ${number02} = ${soma}`)
+    </script>
+</body>
+</html>
