@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jogo da Velha</title>
+    <style>
+        .board {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 5px;
+            margin: 50px auto;
+            width: 300px;
+        }
+
+        .cell {
+            background-color: #eee;
+            border: 1px solid #ccc;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .cell:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="board"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const board = document.querySelector(".board");
+            const cells = [];
+            let currentPlayer = "X";
+            let winner = null;
+
+            // Create cells
+            for (let i = 0; i < 9; i++) {
+                const cell = document.createElement("div");
+                cell.classList.add("cell");
+                cell.dataset.index = i;
+                cell.addEventListener("click", () => cellClicked(i));
+                cells.push(cell);
+                board.appendChild(cell);
+            }
+
+            // Handle cell click
+            function cellClicked(index) {
+                if (winner || cells[index].textContent) return;
+
+                cells[index].textContent = currentPlayer;
+                if (checkWinner(currentPlayer)) {
+                    winner = currentPlayer;
+                    alert(`Player ${currentPlayer} venceu!`);
+                } else if (isBoardFull()) {
+                    alert("Empate!");
+                } else {
+                    currentPlayer = currentPlayer === "X" ? "O" : "X";
+                }
+            }
+
+            // Check for a winner
+            function checkWinner(player) {
+                const lines = [
+                    [0, 1, 2],
+                    [3, 4, 5],
+                    [6, 7, 8],
+                    [0, 3, 6],
+                    [1, 4, 7],
+                    [2, 5, 8],
+                    [0, 4, 8],
+                    [2, 4, 6],
+                ];
+
+                for (const line of lines) {
+                    const [a, b, c] = line;
+                    if (cells[a].textContent === player &&
+                        cells[b].textContent === player &&
+                        cells[c].textContent === player) {
+                        return true;
+                    }
+                }
+
+                return false;
+            }
+
+            // Check if the board is full
+            function isBoardFull() {
+                return cells.every(cell => cell.textContent);
+            }
+        });
+    </script>
+
+</body>
+</html>
