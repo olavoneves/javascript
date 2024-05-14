@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model { DOM }</title>
+    <style>
+        body {
+            background-color: lightblue;
+            color: darkblue;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 139, 0.504);
+        }
+
+        p {
+            font-weight: bolder;
+        }
+
+        p#text {
+            color: white;
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0);
+            text-decoration: underline;
+        }
+
+        div { 
+            color: red;
+            font-weight: bolder;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.111);
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos no DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p id="text">Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div>Clique em mim</div>
+    <script>
+        window.document.write('Olá, Mundo !')
+    </script>
+</body>
+</html>
