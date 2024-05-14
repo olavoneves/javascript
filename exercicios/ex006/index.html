@@ -14,7 +14,7 @@
         }
 
         p {
-            font-weight: bolder;
+            font-weight: bold;
         }
 
         p#text {
@@ -23,10 +23,38 @@
             text-decoration: underline;
         }
 
+        strong {
+            font-weight: bolder;
+        }
+
         div { 
             color: red;
             font-weight: bolder;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.111);
+        }
+
+        h2 {
+            color: black;
+            background-color: white;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            padding: 30px;
+            margin: 60px 40px 0px 40px;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.171);
+            border-radius: 40px 0px 0px 0px;
+        }
+
+        div#area {
+            background-color: black;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+            padding: 50px;
+            margin: 0px 40px;
+            text-align: center;
+            border-radius: 0px 0px 40px 0px;
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.216);
         }
     </style>
 </head>
@@ -37,6 +65,43 @@
     <div>Clique em mim</div>
     <script>
         window.document.write('Olá, Mundo !')
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        corpo.style.background = 'lightgray'
+        window.document.write(p1.innerText)
+        p1.style.color = 'darkblue'
+        var t = window.document.getElementById('text')
+        t.style.background = 'lightgreen'
+        t.innerText = 'Estou no aguardo...'
+        t.style.fontFamily = 'serif'
+        t.style.fontWeight = 900
+    </script>
+
+    <h2>EVENTOS DOM</h2>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()" onmousemove="movimentar()">
+        Intereja aqui !
+    </div>
+    <script>
+        function clicar() {
+            var area = window.document.getElementById('area')
+            area.innerHTML = 'Clicou !'
+        }
+
+        function entrar() {
+            var area = window.document.getElementById('area')
+            area.innerHTML = 'Entrou !'
+        }
+
+        function sair() {
+            var area = window.document.getElementById('area')
+            area.innerHTML = 'Saiu !'
+            area.style.backgroundColor = 'black'
+        }
+
+        function movimentar() {
+            var area = window.document.getElementById('area')
+            area.style.backgroundColor = 'blue'
+        }
     </script>
 </body>
 </html>
