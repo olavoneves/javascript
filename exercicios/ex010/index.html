@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+    <link rel="shortcut icon" href="../ex003/Fasticon-Iphone-Toon-IPhone-Afraid.256.png" type="image/x-icon">
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 0px;
+        }
+
+        h1 {
+            padding: 50px 10px 25px 10px;
+            margin: 15px 40px 5px 40px;
+            background-color: rgb(28, 132, 132);
+            color: white;
+            text-align: center;
+            text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.254);
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.245);
+            border-radius: 30px 0px;
+        }
+
+        p {
+            background-color: rgb(118, 174, 174);
+            font-weight: bolder;
+            padding: 10px;
+            margin: 0px 40px 5px 40px;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.192);
+            border-radius: 25px 0px;
+        }
+
+        input#but {
+            padding: 5px;
+            background-color: rgb(118, 174, 174);
+            border-radius: 5px 0px;
+            box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.144);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+      <p>Velocidade do Transporte: <input type="number" name="vel" id="vel"> km/h.</p>
+    <input type="button" value="Verificar" id="but" onclick="calc()">
+    <div id="res">
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
