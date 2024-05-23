@@ -3,20 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horário</title>
+    <title>Verificador de Idade</title>
     <link rel="shortcut icon" href="../Fasticon-Iphone-Toon-IPhone-Afraid.256.png" type="image/x-icon">
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <header>
-        <h1> Hora do Dia </h1>
+        <h1> Verificador de Idade </h1>
     </header>
     <section>
         <div>
-            teste 
+            <p id="ano"> Ano de Nascimento: 
+                    <input type="number" name="ano" id="ano">
+            </p>
+
+            <p> Sexo: 
+                <input type="radio" name="sex" id="masc" checked>
+                <label for="masc">Masculino</label>
+                <input type="radio" name="sex" id="femi">
+                <label for="femi">Feminino</label>
+            </p> 
+
+            <p>
+                <input type="button" value="Verifique" onclick="verificar()">
+            </p>
         </div>
-        <div>
-            teste
+        <div id="res">
+           <p> Preencha os dados acima para saber o resultado !! </p>
         </div>
     </section>
     <footer>
