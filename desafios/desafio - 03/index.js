@@ -6,14 +6,21 @@ function contar() {
 
     if (ini.value.length == 0 || fim.value.length == 0 || pas.value.length == 0) {
         alert('[Erro  !!] Faltam dados .')
+        res.innerHTML = 'Impossivel realizar a contagem !'
     } else {
         res.innerHTML = ' Contando...'
         var um = Number(ini.value)
         var dois = Number(fim.value)
         var tres = Number(pas.value)
-        
-        for(var cont = um; cont <= dois; cont += tres) {
-            res.innerHTML += `${cont}`
+        if (um < dois) {
+            for(var cont = um;cont <= dois;cont += tres) {
+                res.innerHTML += `${cont} \u{1F449}`
+            }
+        } else {
+            for(var cont = um; cont >= dois; cont -= tres) {
+                res.innerHTML += `${cont} \u{1F449}`
+            }
         }
+        res.innerHTML += `\u{1F3c1}`
     }
 }
