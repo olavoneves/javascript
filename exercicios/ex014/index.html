@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <h1>Functions</h1>
+    <script>
+        function parimp(n) {
+            if (n % 2 == 0) {
+                return'par'
+            } else {
+                return 'ímpar'
+            }
+        }
+        let res = parimp(17)
+        console.log(res)
+
+        function idade(id) {
+            if (id >= 50) {
+                return 'Adulto / Velho'
+            } else {
+                return 'Adolescente / Jovem'
+            }
+        }
+        let result = idade(27)
+        console.log(`Você é uma pessoa ${result}`)
+
+        let numbers = function(x) {
+            return x*2
+        }
+
+        console.log(numbers(9))
+
+        function fatorial(number) {
+            let fat = 1
+            for(let cont = number;cont > 1;cont--) {
+                fat *= cont
+            }
+            return fat
+        }
+        console.log(fatorial(5))
+    </script>
+</body>
+</html>
