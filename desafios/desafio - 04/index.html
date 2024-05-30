@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <link rel="shortcut icon" href="../Fasticon-Iphone-Toon-IPhone-Afraid.256.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1> Tabuada </h1>
+    </header>
+    <section>
+        <div>
+             <p>
+                <label for="num">Número:</label>
+                <input type="number" name="num" id="num">
+
+                <input type="button" value="Gerar Tabuada" onclick="gerarTabuada()" id="botao">
+             </p>
+        </div>
+        <div id="res">
+            <select name="tabuada" id="tab" size="10">
+                <option value="n01">Digite um número acima.</option>
+            </select>
+        </div>
+    </section>
+    <footer>
+        <p id="fim">
+            &copy; CursoemVideo
+        </p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
