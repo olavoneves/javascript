@@ -36,6 +36,11 @@ div {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+label {
+    padding: 37px;
+    font-weight: bold;
+}
+
 p#botoes > input#num01 {
     padding: 2px;
     margin: 5px;
@@ -44,6 +49,23 @@ p#botoes > input#num01 {
 p#botoes > input#num02 {
     padding: 2px;
     margin: 5px;
+}
+
+p#botoes > input#num03 {
+    padding: 2px;
+    margin: 5px;
+}
+
+input#clik {
+    padding: 4px 6px 4px 6px;
+    margin: 8px 35px;
+}
+
+h2 {
+    font-weight: lighter;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
 }
 
 footer {
@@ -56,4 +78,5 @@ footer {
 p#fim {
     text-align: center;
     padding: 15px;
+    font-style: italic;
 }
